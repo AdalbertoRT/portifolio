@@ -10,39 +10,13 @@
 var skill = document.querySelectorAll('.skill');
 var sliderSkill, skillAtual, totalSkill, time;
 var barras = document.querySelectorAll(".barra");
-var niveis = document.querySelectorAll(".nivel");
+var niveis;
 
 function mostrarSkill(s){
-    for(let i = 0; i < skill.length; i++){
-        if(s == i){
-            skill[i].style.opacity = "1";
-            for(let i = 0; i < barras.length; i++){
-                niveis[i].style.width = barras[i].getAttribute("nivel");
-            }
-            setTimeout(() => {
-                skill[i].classList.add("display");
-            }, 2000);
-            
-        }
-        else{
-            skill[i].style.opacity = "0";
-            
-            setTimeout(() => {
-                skill[i].classList.remove("display");
-            }, 2000);
-            
-        }
-    }
-}
-
-function barra(){
-        for(let j = 0; j < barras.length; j++){
-            niveis[j].style.width = "0";
-        }
-        for(let i = 0; i < barras.length; i++){
-            niveis[i].style.width = barras[i].getAttribute("nivel");
-        }
-    
+    skill[s].classList.add("display");
+    nivel = document
+    niveis = document.querySelectorAll(".nivel");
+    barra();
 }
 
 function iniciarSkills(){
@@ -50,13 +24,14 @@ function iniciarSkills(){
     totalSkill = skill.length-1;
     sliderSkill = document.querySelector(".skills");
     mostrarSkill(skillAtual);
-    time = setInterval(mudaSkill, 6000);
-    for(let j = 0; j < barras.length; j++){
-        niveis[j].style.width = "0";
-    }
+    time = setInterval(mudaSkill, 4000); 
 }
 
 function mudaSkill(ir = 1){
+    skill[skillAtual].classList.remove("display");
+    for(let i = 0; i < barras.length; i++){
+        niveis[i].style.width = 0;
+    } 
     skillAtual += ir;
     if(skillAtual > totalSkill){
         skillAtual = 0;
@@ -66,6 +41,13 @@ function mudaSkill(ir = 1){
     }
     mostrarSkill(skillAtual);    
 }
+
+function barra(){
+    for(let i = 0; i < barras.length; i++){
+        niveis[i].style.width = barras[i].getAttribute("nivel");
+    }  
+}
+
 window.addEventListener('load', iniciarSkills);
 
 // CERTIFICADOS
