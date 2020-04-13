@@ -68,7 +68,6 @@
         <div id="skills">
             <h4>Habilidades <small>(Skills)</small></h4>
             <div id="slideSkills" >
-                <div class="skills">
                     <div class="skill display">
                         <fieldset>
                             <legend>Front-end</legend>
@@ -117,7 +116,6 @@
                             </div>
                         </fieldset>
                     </div>
-                </div>
                 
                 <div class="controles">
                     <a href="javascript:void(0);" class="setas prev" onclick="habilidade()">&#9756;</a>
@@ -125,24 +123,26 @@
                 </div>
                 
             </div>
-              
         </div>
+    </div>
+    <div id="page4">
         <div id="cert">
-            <h4>Meus Certificados <small>(Certificates)</small></h4>
-            <div id="slideCert">
-                <div class="certificados">
+                <h4>Meus Certificados <small>(Certificates)</small></h4>
+                <div id="slideCert">
+                    <div class="certificados">
 
+                    </div>
+                    <div class="controles">
+                        <a href="#slideCert" class="setas prev" onclick="mudaCert(-1)">&#9756;</a>
+                        <a href="#slideCert" class="setas next" onclick="mudaCert(1)">&#9758;</a>
+                    </div>
+                    
                 </div>
-                <div class="controles">
-                    <a href="#slideCert" class="setas prev" onclick="mudaCert(-1)">&#9756;</a>
-                    <a href="#slideCert" class="setas next" onclick="mudaCert(1)">&#9758;</a>
-                </div>
-                
             </div>
         </div>
     </div>
 
-    <div id="page4">
+    <div id="page5">
         <div>Meus Projetos <small>(Projects)</small></div>
     </div>
 

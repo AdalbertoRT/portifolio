@@ -10,12 +10,10 @@
 var skill = document.querySelectorAll('.skill');
 var sliderSkill, skillAtual, totalSkill, time;
 var barras = document.querySelectorAll(".barra");
-var niveis;
+var niveis = document.querySelectorAll(".nivel");
 
 function mostrarSkill(s){
     skill[s].classList.add("display");
-    nivel = document
-    niveis = document.querySelectorAll(".nivel");
     barra();
 }
 
@@ -24,14 +22,12 @@ function iniciarSkills(){
     totalSkill = skill.length-1;
     sliderSkill = document.querySelector(".skills");
     mostrarSkill(skillAtual);
-    time = setInterval(mudaSkill, 4000); 
+    time = setInterval(mudaSkill, 6000);
+    
 }
 
 function mudaSkill(ir = 1){
     skill[skillAtual].classList.remove("display");
-    for(let i = 0; i < barras.length; i++){
-        niveis[i].style.width = 0;
-    } 
     skillAtual += ir;
     if(skillAtual > totalSkill){
         skillAtual = 0;
@@ -45,7 +41,7 @@ function mudaSkill(ir = 1){
 function barra(){
     for(let i = 0; i < barras.length; i++){
         niveis[i].style.width = barras[i].getAttribute("nivel");
-    }  
+    }
 }
 
 window.addEventListener('load', iniciarSkills);

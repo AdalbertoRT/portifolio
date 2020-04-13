@@ -223,38 +223,40 @@ aside > #ano{
     }
 }
   
-/* -------------------------- PAGE 3 ---------------------------- */
-#page3 {
+/* -------------------------- PAGE 3/PAGE 4 ---------------------------- */
+#page3, #page4 {
     background-color: #000;
-    height: 100%;
+    height: auto;
     width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
-#page3 h4 {
+#page3 h4, #page4 h4 {
     color: #fff;
     text-transform: uppercase;
 }
-#page3 h4 small {
+#page3 h4 small, #page4 h4 small {
     text-transform: capitalize;
 }
-.skills {
+#skills, #cert{
     width: 100%;
     height: 100%;
-}
-#skills > h4, #cert > h4 {
-    padding: 3px;
-    margin: 0;
-    text-align: center;
-}
-#skills, #cert{
-    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+#skills > h4, #cert > h4 {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
 }
 #slideSkills, #slideCert {
     height: 80%;
-    width: 97%;
+    min-height: 150px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -262,45 +264,44 @@ aside > #ano{
 }
 .skill{
     width: 100%;
-    height: 100%;
     position: absolute;
-    display: flex;
-    align-items: center;
     opacity: 0;
-    /* display: none; */
     transition: opacity 1s ease-in-out;
 }
 .display {
     opacity: 1;
-    /* display: block; */
 }
 .display .nivel {
     width: 0;
 }
 .skill fieldset {
-   width: 85%;
-   margin: auto;;
-   border-bottom: none;
+   width: 80%;
+   margin: auto;
+   display: flex;
    border-left: none;
    border-right: none;
+   border-bottom: none;
 }
 .skill legend {
    text-align: center;
     padding: 0 5px 5px 5px;
-    margin-bottom: 10px;
     color:#fff;
+    font-size: 18px;
 }
 .item {
     display: flex;
 }
 .item > span {
     color: #20cddf;
-    font-size: 12px;
+    font-size: 16px;
     flex:1;
+}
+.item {
+    margin-bottom: 5px;
 }
 .item .barra {
     width: 100%;
-    height: 10px;
+    height: 12px;
     align-self: center;
     flex: 1;
     overflow:hidden;
@@ -311,12 +312,13 @@ aside > #ano{
     height: 100%;
     width: 0;
     background-color:#20cddf;
-    transition: 1.7s linear;
+    transition: 1s linear;
 }
-
 .certificados {
     width: 100%;
     height: 100%;
+    min-height: 180px;
+    margin: 5px 0 10px 0;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -355,7 +357,6 @@ aside > #ano{
     width: 400px;
     height: 100px;
 }
-
 /* ------------------------ MEDIA QUERYS ----------------------- */
 @media only screen and (max-width: 320px) {
     /* PAGE 2 */
@@ -404,6 +405,13 @@ aside > #ano{
         margin-top: 10px;
         padding-bottom: 10px;
     }
+    /* PAGE 3 */
+    .item span {
+        font-size: 18px;
+    }
+    .item .barra {
+        height: 14px;
+    }
     
 }
 @media only screen and (min-width: 376px) and (max-width: 425px) {
@@ -447,6 +455,19 @@ aside > #ano{
     }
     .heart {
         width: 12px;
+    }
+    /* PAGE 3 */
+    .skill fieldset legend {
+        font-size: 20px;
+    }
+    .item span {
+        font-size: 18px;
+    }
+    .item .barra {
+        height: 14px;
+    }
+    .setas {
+        font-size: 33px;
     }
 }
 @media only screen and (min-width: 426px) and (max-width: 600px) {
@@ -499,6 +520,23 @@ aside > #ano{
     }
      #aboutContent {
         max-width: 390px;
+    }
+    /* PAGE 3 */
+    #skills > h4, #cert > h4 {
+        padding: 5px;
+        font-size: 18px;
+    }
+    .skill fieldset legend {
+        font-size: 20px;
+    }
+    .item span {
+        font-size: 18px;
+    }
+    .item .barra {
+        height: 14px;
+    }
+    .setas {
+        font-size: 36px;
     }
 }
 @media only screen and (min-width: 601px) and (max-width: 768px) {
@@ -554,6 +592,26 @@ aside > #ano{
     }
      #aboutContent {
         max-width: 500px;
+    }
+    /* PAGE 3 */
+    #skills > h4, #cert > h4 {
+        padding: 5px;
+        font-size: 20px;
+    }
+    .skill fieldset {
+        width: 85%;
+    }
+    .skill fieldset legend {
+        font-size: 22px;
+    }
+    .item span {
+        font-size: 20px;
+    }
+    .item .barra {
+        height: 16px;
+    }
+    .setas {
+        font-size: 36px;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
