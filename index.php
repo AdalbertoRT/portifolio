@@ -118,8 +118,8 @@
                     </div>
                 
                 <div class="controles">
-                    <a href="javascript:void(0);" class="setas prev" onclick="habilidade()">&#9756;</a>
-                    <a href="javascript:void(0);" class="setas next">&#9758;</a>
+                    <a href="javascript:void(0);" class="setas prev" onclick="pararSkill(-1)">&#9756;</a>
+                    <a href="javascript:void(0);" class="setas next" onclick="pararSkill(1)">&#9758;</a>
                 </div>
                 
             </div>

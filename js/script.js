@@ -37,7 +37,11 @@ function mudaSkill(ir = 1){
     }
     mostrarSkill(skillAtual);    
 }
-
+function pararSkill(ir){
+    mudaSkill(ir);
+    clearInterval(time);
+    time = setInterval(mudaSkill, 6000);
+}
 function barra(){
     for(let i = 0; i < barras.length; i++){
         niveis[i].style.width = barras[i].getAttribute("nivel");

@@ -5,6 +5,7 @@
 body, html{
     width: 100%;
     height: 100%;
+    overflow-x: hidden
 }
 *{
     padding: 0;
@@ -42,6 +43,7 @@ aside{
     align-items: center;
     flex-direction: column;
     color: white;
+    position: relative;
     flex: 2;
 }
 aside a {
@@ -318,7 +320,8 @@ aside > #ano{
     width: 100%;
     height: 100%;
     min-height: 180px;
-    margin: 5px 0 10px 0;
+    margin: auto;
+    margin-bottom: 10px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -367,6 +370,10 @@ aside > #ano{
         margin: 5px;
         margin-top: 8px;
         padding-bottom: 8px;
+    }
+    /* PAGE 3 */
+    .certificados {
+        width: 80%;
     }
     
 }
@@ -522,9 +529,16 @@ aside > #ano{
         max-width: 390px;
     }
     /* PAGE 3 */
+    #page3 {
+        min-height: 190px;
+    }
     #skills > h4, #cert > h4 {
         padding: 5px;
+        margin-bottom: 5px;
         font-size: 18px;
+    }
+    .skill fieldset {
+        margin-bottom: 10px;
     }
     .skill fieldset legend {
         font-size: 20px;
@@ -537,6 +551,11 @@ aside > #ano{
     }
     .setas {
         font-size: 36px;
+    }
+    /* PAGE 4 */
+    .certificados {
+        height: 300px;
+        background-size: 60%;
     }
 }
 @media only screen and (min-width: 601px) and (max-width: 768px) {
@@ -594,15 +613,23 @@ aside > #ano{
         max-width: 500px;
     }
     /* PAGE 3 */
+    #page3 {
+        min-height: 200px;
+    }
     #skills > h4, #cert > h4 {
         padding: 5px;
         font-size: 20px;
+        margin-bottom: 5px;
     }
     .skill fieldset {
         width: 85%;
+        margin-bottom: 10px;
     }
     .skill fieldset legend {
         font-size: 22px;
+    }
+    #slideSkills {
+        width: 80%;
     }
     .item span {
         font-size: 20px;
@@ -612,6 +639,14 @@ aside > #ano{
     }
     .setas {
         font-size: 36px;
+    }
+    /* PAGE 4 */
+    .certificados {
+        height: 300px;
+        background-size: 60%;
+    }
+    #slideCert {
+        width: 80%;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -670,6 +705,46 @@ aside > #ano{
     }
      #aboutContent {
         max-width: 700px;
+    }
+    /* PAGE 3 */
+    #page3, #page4 {
+      float: left;
+      width: 50%;
+      height: 100%;
+    }
+    #skills > h4, #cert > h4 {
+        padding: 5px;
+        font-size: 20px;
+    }
+    .skill fieldset {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    .skill fieldset legend {
+        font-size: 22px;
+    }
+    #slideSkills {
+        width: 95%;
+    }
+    .skill fieldset legend {
+        font-size: 22px;
+    }
+    .item span {
+        font-size: 20px;
+    }
+    .item .barra {
+        height: 16px;
+    }
+    .setas {
+        font-size: 38px;
+    }
+    /* PAGE 4 */
+    .certificados {
+        height: 100%;
+        background-size: 75%;
+    }
+    #slideCert {
+        width: 80%;
     }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -731,6 +806,50 @@ aside > #ano{
      #aboutContent {
         max-width: 900px;
     }
+    /* PAGE 3 */
+    #page3, #page4 {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    #skills > h4, #cert > h4 {
+        padding: 5px;
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    .skill fieldset {
+        width: 85%;
+        margin-bottom: 20px;
+    }
+    .skill fieldset legend {
+        font-size: 22px;
+    }
+    #slideSkills {
+        width: 90%;
+    }
+    .skill fieldset legend {
+        font-size: 24px;
+    }
+    .item {
+        margin-bottom: 10px;
+    }
+    .item span {
+        font-size: 22px;
+    }
+    .item .barra {
+        height: 18px;
+    }
+    .setas {
+        font-size: 40px;
+    }
+    /* PAGE 4 */
+    .certificados {
+        height: 100%;
+        background-size: 75%;
+    }
+    #slideCert {
+        width: 80%;
+    }
 }
 @media only screen and (min-width: 1441px) {
     aside{
@@ -776,7 +895,7 @@ aside > #ano{
         margin-bottom: 30px;
     }
     #about > h4 {
-       font-size: 42px;
+       font-size: 50px;
     }
     #et, #eb, #dt, #db {
         width: 200px;
@@ -793,6 +912,45 @@ aside > #ano{
     }
      #aboutContent {
         max-width: 1300px;
+    }
+    /* PAGE 3 */
+    #page3, #page4 {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    #skills > h4, #cert > h4 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .skill fieldset {
+        width: 80%;
+    }
+    #slideSkills {
+        width: 95%;
+    }
+    .skill fieldset legend {
+        font-size: 56px;
+    }
+    .item {
+       margin-bottom: 20px;
+    }
+    .item span {
+        font-size: 44px;
+    }
+    .item .barra {
+        height: 40px;
+    }
+    .setas {
+        font-size: 86px;
+    }
+    /* PAGE 4 */
+    .certificados {
+        height: 100%;
+        background-size: 70%;
+    }
+    #slideCert {
+        width: 90%;
     }
 } 
 
