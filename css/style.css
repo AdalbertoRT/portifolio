@@ -44,7 +44,7 @@ aside{
     flex-direction: column;
     color: white;
     position: relative;
-    flex: 2;
+    flex: 1;
 }
 aside a {
     text-decoration: none;
@@ -60,23 +60,29 @@ aside a {
 }
 #webDev {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     transition: 0.7s;
+}
+#webDev > #nomeMobile {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 #webDev:hover {
    text-shadow: 0 0 10px #fff;
 }
 #web {
-    border: 1px solid #20cddf;
+    border: 2px solid #20cddf;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1px;
-    margin-right: 3px;
 }
 #web > span{
-    font-size: 36px;
+    font-size: 46px;
     -webkit-transform:scaleY(1.5); /* Safari and Chrome */
     -moz-transform:scaleY(1.5); /* Firefox */
     -ms-transform:scaleY(1.5); /* IE 9 */
@@ -96,6 +102,7 @@ aside a {
     font-size: 14px;
     transition: 0.7s;
     height: 50%;
+    display: none;
 }
 .scalable:hover {
     transform: scale(1.03);
@@ -382,15 +389,17 @@ aside > #ano{
         font-size: 14px;
     }
     #web {
-        border: 1px solid #20cddf;
+        border: 2px solid #20cddf;
         padding: 1px;
-        margin-right: 3px;
     }
     #web > span{
-        font-size: 36px;
+        font-size: 56px;
+    }
+    #webDev > #nomeMobile {
+        font-size: 17px;
     }
     #nome_dev > #dev{
-        font-size: 20px;
+        font-size: 22px;
     }
     #nome_dev > #nome {
         font-size: 15px;
@@ -423,19 +432,24 @@ aside > #ano{
 }
 @media only screen and (min-width: 376px) and (max-width: 425px) {
     /* CAPA */
+    aside {
+        flex: 1.5;
+    }
     #port{
         font-size: 17px;
     }
     #web {
-        border: 2px solid #20cddf;
+        border: 3px solid #20cddf;
         padding: 1px;
-        margin-right: 5px;
     }
     #web > span{
-        font-size: 38px;
+        font-size: 60px;
+    }
+    #webDev > #nomeMobile {
+        font-size: 19px;
     }
     #nome_dev > #dev{
-        font-size: 22px;
+        font-size: 24px;
     }
     #nome_dev > #nome {
         font-size: 17px;
@@ -478,6 +492,9 @@ aside > #ano{
     }
 }
 @media only screen and (min-width: 426px) and (max-width: 600px) {
+    aside{
+        flex: 2;
+    }
     #port{
         font-size: 18px;
     }
@@ -489,11 +506,18 @@ aside > #ano{
     #web > span{
         font-size: 44px;
     }
+    #webDev {
+        flex-direction: row;
+    }
+    #nomeMobile {
+        display: none;
+    }
     #nome_dev > #dev{
         font-size: 26px;
     }
     #nome_dev > #nome {
         font-size: 20px;
+        display: block;
     }
     aside > #ano{
         font-size: 18px;
@@ -566,18 +590,25 @@ aside > #ano{
         font-size: 18px;
     }
     #web {
-        border: 2px solid #20cddf;
+        border: 3px solid #20cddf;
         padding: 1px;
         margin-right: 8px;
     }
     #web > span{
-        font-size: 44px;
+        font-size: 52px;
+    }
+    #webDev {
+        flex-direction: row;
+    }
+    #nomeMobile {
+        display: none;
     }
     #nome_dev > #dev{
         font-size: 26px;
     }
     #nome_dev > #nome {
         font-size: 20px;
+        display:block;
     }
     aside > #ano{
         font-size: 18px;

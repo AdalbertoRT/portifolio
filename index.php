@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!--    <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
-    <title>Adalberto Rodrigues Teixeira</title>
+    <title>Adalberto - Portifólio</title>
 </head>
 <body>
     <!-- CAPA DO PORTIFOLIO -->
@@ -19,6 +19,7 @@
         <aside>
             <div id="port"  class="scalable"><a href="">PORTIFÓLIO</a></div>
             <div id="webDev">
+                <div id="nomeMobile" class="scalable"><a href="">Adalberto <span id="sobrenome">Teixeira</span></a></div>
                 <div id="web">
                     <span class="titulo">WEB</span>
                 </div>
