@@ -26,16 +26,8 @@ function iniciarSkills(){
     
 }
 
-function mudaSkill(ir = 1){
-    skill[skillAtual].classList.remove("display");
-    skillAtual += ir;
-    if(skillAtual > totalSkill){
-        skillAtual = 0;
-    }
-    if(skillAtual < 0){
-        skillAtual = totalSkill;
-    }
-    mostrarSkill(skillAtual);    
+function animaScroll() {
+  console.log("Animou");
 }
 
 function barra(){
@@ -43,8 +35,6 @@ function barra(){
         niveis[i].style.width = barras[i].getAttribute("nivel");
     }
 }
-
-window.addEventListener('load', iniciarSkills);
 
 // CERTIFICADOS
 var imgs=[];
