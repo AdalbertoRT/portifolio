@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/mqueries.css">
     <!--    <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
-    <title>Adalberto Rodrigues Teixeira</title>
+    <title>Adalberto - Portifólio</title>
 </head>
 
 <body>
@@ -34,6 +34,7 @@
         <aside>
             <div id="port" class="scalable"><a href="">PORTIFÓLIO</a></div>
             <div id="webDev">
+                <div id="nomeMobile" class="scalable"><a href="">Adalberto <span id="sobrenome">Teixeira</span></a></div>
                 <div id="web">
                     <span class="titulo">WEB</span>
                 </div>
@@ -69,6 +70,13 @@
 
                         Hoje <span class="destaque">continuo meus estudos</span> com <span class="destaque">cursos online de altíssima qualidade</span>, pela <span class="destaque">B7web, Udemy, Origamid, Digital Innovation One, Curso em Video, entre outros</span>. Já realizei varios projetos que são aplicados nestes cursos, desde <span class="destaque">Landing Pages, Sites Institucionais, Lojas Virtuais, Portais, Portifólios e muitas outras aplicações</span>. Além dos cursos participo de comunidades, canais de programadores, fóruns e <span class="destaque">estou conectado</span> a varios grupos de programadores (Whatsapp e redes sociais). Assim me mantenho sempre atualizado.
                     </div>
+<<<<<<< HEAD
+=======
+                
+                <div class="controles">
+                    <a href="javascript:void(0);" class="setas prev" onclick="pararSkill(-1)">&#9756;</a>
+                    <a href="javascript:void(0);" class="setas next" onclick="pararSkill(1)">&#9758;</a>
+>>>>>>> c8633f885614ff6d26f8d00410beb8ef2f5843b9
                 </div>
                 <div id="bordaInf">
                     <div id="eb"></div>
