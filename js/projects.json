@@ -1,0 +1,112 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "arttronics",
+      "type": "e-commerce",
+      "tecnology": ["php", "mysql", "html5", "css3", "javascript", "bootstrap"],
+      "thumb": "arttronics.png",
+      "image": "index_arttronics.png",
+      "info": [
+        "Projeto de Estudo",
+        "Criação de um e-commerce utilizando PHP, MySQL, HTML5, CSS3, Javascript e Bootstrap. A aplicação não tem implementado a finalização de transações."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "rockabellos",
+      "type": "site institucional",
+      "tecnology": ["mvc", "php", "mysql", "html5", "css3", "javascript"],
+      "thumb": "rockabellos.png",
+      "image": "index_rockabellos.png",
+      "info": [
+        "Projeto de Estudo",
+        "Criação de um e-commerce utilizando o padrão de desenvolvimento MVC com a linguagem PHP. Também utilizo as tecnologias: MySQL, HTML5, CSS3, Javascript e Bootstrap. A aplicação não tem implementado a finalização de transações."
+      ]
+    },
+    {
+      "id": 3,
+      "name": "classificados",
+      "type": "catalogo",
+      "tecnology": ["mvc", "html5", "css3", "javascript"],
+      "thumb": "classificados.png",
+      "image": "index_classificados.png",
+      "info": [
+        "Projeto de Estudo",
+        "Criação de um classificados de produtos (estilo OLX), utilizando o padrão de desenvolvimento MVC em PHP."
+      ]
+    },
+    {
+      "id": 4,
+      "name": "lemon",
+      "type": "institucional/catalogo",
+      "tecnology": ["html5", "css3", "javascript", "vuejs"],
+      "thumb": "lemon.png",
+      "image": "index_lemon.png",
+      "info": [
+        "Projeto de Teste de Habilidade",
+        "Criação de um site comercial, estilo catalogo de produtos de uma marca. Este site foi produzido como forma de teste admissional. As tecnologias utilizadas foram: HTML5, CSS3, Javascript, e alguns componentes em VueJS."
+      ]
+    },
+    {
+      "id": 5,
+      "name": "loja virtual 1.0",
+      "type": "e-commerce",
+      "tecnology": ["html5", "css3", "javascript", "php"],
+      "thumb": "lojav1.png",
+      "image": "index_lojavirtual1.0.png",
+      "info": [
+        "Projeto de Estudo",
+        "Criação de um e-commerce utilizando PHP, MySQL, HTML5, CSS3, Javascript e Bootstrap. A aplicação calcula o valor do frete e o tempo de entrega, através da API dos correios implementada no codigo. A finalização da compra é implementada com a API do Mercado Pago, mas apenas para teste em SandBox."
+      ]
+    },
+    {
+      "id": 6,
+      "name": "pizzaria",
+      "type": "delivery",
+      "tecnology": ["html5", "css3", "javascript"],
+      "thumb": "pizza.png",
+      "image": "index_pizzajs.png",
+      "info": [
+        "Projeto de Estudo",
+        "Criação de um delivery de pizzas utilizando na maior parte javascript. A aplicação simula todo o processo de pedido de pizza, mas não efetiva o pedido de verdade."
+      ]
+    },
+    {
+      "id": 7,
+      "name": "animais",
+      "type": "portal",
+      "tecnology": ["html5", "css3", "javascript"],
+      "thumb": "animais.png",
+      "image": "index_animais.png",
+      "info": [
+        "Projeto de Estudo",
+        "Criação de um portal de informações de animais selvagens. A aplicação serviu como estudo e evolução das habilidades na linguagem Javascript."
+      ]
+    },
+    {
+      "id": 8,
+      "name": "portal",
+      "type": "portal",
+      "tecnology": ["html5", "css3", "javascript"],
+      "thumb": "portal.png",
+      "image": "index_portal.png",
+      "info": [
+        "Projeto de Estudo",
+        "Criação de um portal de notícias simples para desenvolver habilidades em HTML5, CSS3 e Javascript."
+      ]
+    },
+    {
+      "id": 9,
+      "name": "medicenter",
+      "type": "institucional",
+      "tecnology": ["html5", "css3", "javascript"],
+      "thumb": "medicenter.png",
+      "image": "index_medicenter.png",
+      "info": [
+        "Projeto de Estudo",
+        "Criação de um site institucional para uma clínica médica para desenvolver habilidades em HTML5, CSS3 e Javascript."
+      ]
+    }
+  ]
+}

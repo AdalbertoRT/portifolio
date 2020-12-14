@@ -1,0 +1,31 @@
+{
+  "knowJson": [
+    {
+      "id": 1,
+      "titulo": "Front-End",
+      "ferramentas": [
+        "HTML 5",
+        "CSS 3",
+        "Javascript",
+        "ReactJS",
+        "VueJS",
+        "Bootstrap"
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Back-End",
+      "ferramentas": ["PHP", "MySQL", "Laravel", "REST API"]
+    },
+    {
+      "id": 3,
+      "titulo": "Design Gráfico",
+      "ferramentas": ["Photoshop", "Illustrator", "After Effects", "Premiere"]
+    },
+    {
+      "id": 4,
+      "titulo": "Ferramentas",
+      "ferramentas": ["Git", "GitHub", "Composer", "NPM"]
+    }
+  ]
+}
