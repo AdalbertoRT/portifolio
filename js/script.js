@@ -54,7 +54,6 @@ function initAnimaScroll() {
 
   window.addEventListener("scroll", animaScroll);
 }
-<<<<<<< HEAD
 initAnimaScroll();
 
 function myProjects() {
@@ -100,17 +99,6 @@ function myProjects() {
     initModalProjeto();
   }
   project();
-=======
-function pararSkill(ir){
-    mudaSkill(ir);
-    clearInterval(time);
-    time = setInterval(mudaSkill, 6000);
-}
-function barra(){
-    for(let i = 0; i < barras.length; i++){
-        niveis[i].style.width = barras[i].getAttribute("nivel");
-    }
->>>>>>> c8633f885614ff6d26f8d00410beb8ef2f5843b9
 }
 myProjects();
 
