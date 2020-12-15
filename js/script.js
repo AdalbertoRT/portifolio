@@ -96,7 +96,9 @@ function myProjects() {
 
       projects.append(card);
     });
-    initModalProjeto();
+    if (cs(".knows").length) {
+      initModalProjeto();
+    }
   }
   project();
 }
@@ -106,6 +108,7 @@ function initModalProjeto() {
   const projeto = cs(".card");
   projeto.forEach((item) => {
     item.addEventListener("click", () => {
+      c("body").style.overflowY = "hidden";
       let src = `${
         document.location.origin +
         document.location.pathname +
@@ -113,29 +116,43 @@ function initModalProjeto() {
         item.querySelector(".thumb").getAttribute("data-image")
       }`;
 
-      let modal = document.createElement("div");
-      modal.classList.add("modal", "background");
-      let modalContainer = document.createElement("div");
-      modalContainer.classList.add("modalContainer");
-      let btnContainer = document.createElement("div");
-      btnContainer.classList.add("btnContainer");
-      let fechar = document.createElement("button");
-      fechar.innerText = "x";
-      fechar.classList.add("fechar");
-      let info = document.createElement("button");
-      info.innerText = "Info";
-      info.classList.add("info");
-      btnContainer.append(fechar, info);
-      let modalContent = document.createElement("div");
-      modalContent.classList.add("modalContent");
-      let img = document.createElement("img");
-      img.src = src;
-      modalContent.append(img);
-      modalContainer.append(btnContainer, modalContent);
-      modal.append(modalContainer);
+      // let modal = document.createElement("div");
+      // modal.classList.add("modal", "background", "ativo");
+      // let modalContainer = document.createElement("div");
+      // modalContainer.classList.add("modalContainer");
+      // let btnContainer = document.createElement("div");
+      // btnContainer.classList.add("btnContainer");
+      // let fechar = document.createElement("button");
+      // fechar.innerText = "x";
+      // fechar.classList.add("fechar");
+      // let info = document.createElement("button");
+      // info.innerText = "Info";
+      // info.classList.add("info");
+      // btnContainer.append(fechar, info);
+      // let modalContent = document.createElement("div");
+      // modalContent.classList.add("modalContent");
+      // let img = document.createElement("img");
+      // img.src = src;
+      // modalContent.append(img);
+      // modalContainer.append(btnContainer, modalContent);
+      // modal.append(modalContainer);
 
-      c("body").append(modal);
-      c("html").style.overflowY = "hidden";
+      // c("body").append(modal);
+
+      let modal = c(".modal");
+      let modalContainer = c(".modalContainer");
+      let modalContent = modal
+        .querySelector(".modalContent")
+        .querySelector("img");
+      modalContent.src = src;
+      modalContent.alt = item
+        .querySelector(".thumb")
+        .getAttribute("data-image")
+        .replace(".png", "");
+
+      modal.classList.add("ativo");
+      modalContainer.classList.add("ativo");
+
       fechaModal();
 
       let info1 = item.querySelector(".card-body").getAttribute("data-info1");
@@ -147,29 +164,37 @@ function initModalProjeto() {
 
 function fechaModal() {
   let modal = c(".modal");
+  let modalContainer = c(".modalContainer");
   modal.addEventListener("click", ({ target }) => {
     if (
       target.classList.contains("modal") ||
       target.classList.contains("fechar")
     ) {
-      modal.remove();
-      c("html").style.overflowY = "auto";
+      modal.classList.remove("ativo");
+      modalContainer.classList.remove("ativo");
+      c("body").style.overflowY = "auto";
+    } else if (target.classList.contains("fecharInfo")) {
+      c(".modalInfo").classList.remove("ativo");
+      c(".modalContent").style.opacity = "1";
     }
   });
 }
 
 function initModalInfo(info1, info2) {
-  let modal = document.createElement("div");
-  modal.classList.add("modalInfo");
-  let fechar = document.createElement("button");
-  fechar.innerText = "x";
-  fechar.classList.add("fechar");
-  let h4 = document.createElement("h4");
-  h4.innerText = info1;
-  let p = document.createElement("p");
-  p.innerText = info2;
-  modal.append(fechar, h4, p);
-  c(".modalContainer").appendChild(modal);
+  // let modal = document.createElement("div");
+  // modal.classList.add("modalInfo");
+  // let fechar = document.createElement("button");
+  // fechar.innerText = "x";
+  // fechar.classList.add("fecharInfo");
+  // let h4 = document.createElement("h4");
+  // h4.innerText = info1;
+  // let p = document.createElement("p");
+  // p.innerText = info2;
+  // modal.append(fechar, h4, p);
+  // c(".modalContainer").appendChild(modal);
+  let modal = c(".modalInfo");
+  modal.querySelector("h4").innerText = info1;
+  modal.querySelector("p").innerText = info2;
   mostrarInfo();
 }
 
@@ -179,8 +204,10 @@ function mostrarInfo() {
 
   if (info) {
     info.addEventListener("click", () => {
-      modalInfo.classList.toggle("ativo");
-      c(".modalContent").style.opacity = "0.3";
+      if (!modalInfo.classList.contains("ativo")) {
+        modalInfo.classList.add("ativo");
+        c(".modalContent").style.opacity = "0.3";
+      }
     });
   }
 }

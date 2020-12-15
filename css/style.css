@@ -56,6 +56,9 @@ header {
   padding-top: 1rem;
   box-sizing: border-box;
 }
+.sociais {
+  margin-right: 10px;
+}
 .sociais ul {
   display: flex;
   list-style: none;
@@ -94,6 +97,7 @@ section {
   padding: 0 2rem;
   width: 100vw;
   box-sizing: border-box;
+  width: 100%;
 }
 section h2 {
   color: #fff;
@@ -133,6 +137,8 @@ aside a {
   display: flex;
   align-items: flex-end;
   transition: 0.7s;
+  margin: 10px;
+  padding: 0;
 }
 #webDev > #nomeMobile {
   font-size: 15px;
@@ -150,6 +156,7 @@ aside a {
   align-items: center;
   padding: 5px;
   margin-right: 10px;
+  font-weight: bold;
 }
 #web > span {
   font-size: 6rem;
@@ -208,7 +215,7 @@ aside > #ano {
 }
 #aboutContent {
   display: flex;
-  width: 100%;
+  width: 110%;
   flex-direction: column;
   position: relative;
   margin-bottom: 1rem;
@@ -443,24 +450,36 @@ aside > #ano {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
+  opacity: 0;
+  transition: 0.2s;
+}
+.modal.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  z-index: 99;
 }
 .modalContainer {
   background-color: rgba(255, 255, 255, 0.5);
   box-sizing: border-box;
   border: 1px solid #fff;
   border-radius: 10px;
-  width: 50%;
-  height: auto;
+  width: 0;
+  height: 0;
   margin: 3rem;
   box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: translate3d(0, -30px, 0);
+  transition: 0.7s;
 }
 .modalContainer button {
   border: 3px solid #fff;
@@ -472,6 +491,12 @@ aside > #ano {
   background: rgb(0, 0, 0, 0.7);
   color: #fff;
   margin: 0 5px;
+}
+.modalContainer.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  width: 80%;
+  height: auto;
 }
 .btnContainer {
   position: absolute;
@@ -506,12 +531,15 @@ aside > #ano {
   text-align: justify;
   padding: 1rem;
   font-size: 1.5rem;
-  display: none;
+  opacity: 0;
+  transform: translate3d(0, -30px, 0);
+  transition: 0.5s;
 }
 .modalInfo.ativo {
-  display: block;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
-.modalInfo .fechar {
+.modalInfo .fecharInfo {
   position: absolute;
   top: -20px;
   right: -20px;

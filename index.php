@@ -34,7 +34,6 @@
         <aside>
             <div id="port" class="scalable"><a href="">PORTIFÓLIO</a></div>
             <div id="webDev">
-                <div id="nomeMobile" class="scalable"><a href="">Adalberto <span id="sobrenome">Teixeira</span></a></div>
                 <div id="web">
                     <span class="titulo">WEB</span>
                 </div>
@@ -61,22 +60,15 @@
                 <div id="imgInfo">
                     <div id="eu2" title="Este sou eu!"></div>
                     <div id="info">
-                        Meu nome é <strong class="destaque nome">Adalberto Rodrigues Teixeira</strong> e sou <span class="destaque">Desenvolvedor Web</span>. Sou formado em <span class="destaque">Análise e Desenmvolvimento de Sistemas</span> e tenho como especialização, o desenvolvimento de aplicações web. Estou apto a codificar tanto o <span class="destaque">front-end</span> como o <span class="destaque">back-end</span>​, ou seja, <span class="destaque">sou desenvolvedor Full-Stack</span>. A stack que mais domino é: <span class="destaque">PHP, HTML5, CSS3, Javascript e MySQL</span> assim como, alguns <span class="destaque">frameworks de back e front-ends e editores de imagem</span>.<br /><br />
+                        Meu nome e´ <strong class="destaque nome">Adalberto Rodrigues Teixeira</strong> e sou <span class="destaque">Desenvolvedor Web</span>. Sou formado em <span class="destaque">Análise e Desenvolvimento de Sistemas</span> e tenho como especialização, o desenvolvimento de aplicações web. Estou apto a codificar tanto o <span class="destaque">front-end</span> como o <span class="destaque">back-end</span>​, ou seja, <span class="destaque">sou desenvolvedor Full-Stack</span>. A stack que mais domino e´: <span class="destaque">PHP, HTML5, CSS3, Javascript e MySQL</span> assim como, alguns <span class="destaque">frameworks de back e front-ends e editores de imagem</span>.<br /><br />
 
-                        Minha <span class="destaque">graduação</span> foi pela <span class="destaque">Unifran</span> em modelo EAD, através do sistema de ensino Cruzeiro do Sul Virtual. Mas minhas experiências com programação vem desde 2007 quando resolvi prestar vestibular para o curso de <span class="destaque">Informática para a Gestão de Negócios</span> na Fatec - São José do Rio Preto - SP, cidade onde resido. Fiz outros cursos posteriormente de <span class="destaque">Administração</span> e <span class="destaque">Design Gráfico</span>, mas retornei para a minha primeira paixão, a <span class="destaque">informática</span> <img class="heart" src="images/heart-anil.png" alt="">.
+                        Minha <span class="destaque">graduação</span> foi pela <span class="destaque">Unifran</span> em modelo EAD, atraves do sistema de ensino Cruzeiro do Sul Virtual. Mas minhas experiências com programação vem desde 2007 quando resolvi prestar vestibular para o curso de <span class="destaque">Informática para a Gestão de Negócios</span> na Fatec - São José do Rio Preto - SP, cidade onde resido. Fiz outros cursos posteriormente de <span class="destaque">Administração</span> e <span class="destaque">Design Gráfico</span>, mas retornei para a minha primeira paixão, a <span class="destaque">informática</span> <img class="heart" src="images/heart-anil.png" alt="">.
                         <br /><br />
 
                         <!-- Em paralelo a programação sempre exerci a profissão de barbeiro (eu sei, não tem nada a ver com a área kkkk), que me deu combustível para que eu realizasse meus estudos. Depois de anos de estudo, hoje me sinto seguro e experiente para exercer a profissão de <span class="destaque">programador</span>.<br /><br /> -->
 
                         Hoje <span class="destaque">continuo meus estudos</span> com <span class="destaque">cursos online de altíssima qualidade</span>, pela <span class="destaque">B7web, Udemy, Origamid, Digital Innovation One, Curso em Video, entre outros</span>. Já realizei varios projetos que são aplicados nestes cursos, desde <span class="destaque">Landing Pages, Sites Institucionais, Lojas Virtuais, Portais, Portifólios e muitas outras aplicações</span>. Além dos cursos participo de comunidades, canais de programadores, fóruns e <span class="destaque">estou conectado</span> a varios grupos de programadores (Whatsapp e redes sociais). Assim me mantenho sempre atualizado.
                     </div>
-<<<<<<< HEAD
-=======
-                
-                <div class="controles">
-                    <a href="javascript:void(0);" class="setas prev" onclick="pararSkill(-1)">&#9756;</a>
-                    <a href="javascript:void(0);" class="setas next" onclick="pararSkill(1)">&#9758;</a>
->>>>>>> c8633f885614ff6d26f8d00410beb8ef2f5843b9
                 </div>
                 <div id="bordaInf">
                     <div id="eb"></div>
@@ -128,8 +120,26 @@
         <button><a href="images/curriculum.pdf" download="Curriculum.pdf"><img src="images/icons/curriculo.png" alt="Curriculo">Baixar Currículum</a></button>
     </footer>
 
+    <div class="modal background">
+        <div class="modalContainer">
+            <div class="btnContainer">
+                <button class="fechar">x</button>
+                <button class="info">Info</button>
+            </div>
+            <div class="modalContent">
+                <img src="" alt="">
+            </div>
+            <div class="modalInfo">
+                <button class="fecharInfo">x</button>
+                <h4></h4>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
     <!-- <script type="text/javascript" src="js/knowledges.js"></script> -->
     <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 
 </html>

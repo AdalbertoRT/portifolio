@@ -29,24 +29,27 @@
     margin-top: 10px;
   }
   #web {
-    border: 2px solid #20cddf;
-    padding: 1px 3px;
-    margin-right: 5px;
+    border: 3px solid #20cddf;
+    padding: 1px 2px;
+    margin-right: 0;
   }
   #webDev {
-    margin: 10px;
     padding: 0;
+    flex-direction: column;
   }
   #web > span {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+  }
+  #nome_dev {
+    flex-direction: column-reverse;
   }
   #nome_dev > #dev {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   #nome_dev > #nome {
-    font-size: 1rem;
+    font-size: 1.1rem;
     transform: scale(1, 2.3);
-    margin-bottom: 10px;
+    margin-top: 30px;
   }
   aside > #ano {
     font-size: 1rem;
@@ -68,28 +71,15 @@
     height: 50px;
   }
   #info {
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-  }
-  #info .nome {
-    text-transform: uppercase;
   }
   #info .destaque {
     font-family: "Times New Roman", Times, serif;
-    color: #fff;
   }
   /* Heart Beat */
   .heart {
     width: 1rem;
-    animation: heartbeat 0.5s cubic-bezier(0.245, 0.325, 0.51, 1.305) infinite
-      alternate;
-    color: darken(#20cddf, 30%);
-  }
-
-  @keyframes heartbeat {
-    to {
-      transform: scale(1.7);
-    }
   }
   /* -------------------------- PAGE 3 ---------------------------- */
   #knowledge {
@@ -209,20 +199,24 @@
   #page2,
   #page3,
   #page4 {
-    padding: 1rem 0.5rem;
+    padding: 1.5rem 0.5rem;
   }
   header {
     padding-right: 0.4rem;
     padding-top: 0.4rem;
   }
+
   .sociais ul li a img {
     margin: 0 0.3rem;
   }
   .sociais ul li a img {
     width: 20px;
   }
+  section {
+    padding: 0 1rem;
+  }
   section h2 {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
   }
   /* ------------------ ASIDE -------------------- */
   aside {
@@ -233,16 +227,215 @@
     margin-top: 10px;
   }
   #web {
-    border: 2px solid #20cddf;
-    padding: 1px 3px;
-    margin-right: 5px;
+    border: 3px solid #20cddf;
+    padding: 2px 3px;
+    margin-right: 0;
   }
   #webDev {
-    margin: 10px;
     padding: 0;
+    flex-direction: column;
   }
   #web > span {
+    font-size: 2.8rem;
+  }
+  #nome_dev {
+    flex-direction: column-reverse;
+  }
+  #nome_dev > #dev {
+    font-size: 1.2rem;
+  }
+  #nome_dev > #nome {
+    font-size: 1.2rem;
+    transform: scale(1, 2.3);
+    margin-top: 30px;
+  }
+  aside > #ano {
+    font-size: 1.3rem;
+  }
+  /* PAGE 2 */
+  #about {
+    margin-top: 1.5rem;
+  }
+  #aboutContent {
+    margin-bottom: 1.2rem;
+  }
+  #imgInfo {
+    margin: 0.8rem;
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+  #eu2 {
+    width: 55px;
+    height: 55px;
+  }
+  #info {
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Heart Beat */
+  .heart {
+    width: 1rem;
+  }
+
+  /* -------------------------- PAGE 3 ---------------------------- */
+  #knowledge {
+    margin-top: 1rem;
+    padding: 0 1rem;
+    grid-template-columns: 1fr;
+  }
+  .knows {
+    padding: 0 5px;
+    margin: 0.5rem;
+  }
+  .knows h3 {
+    margin-bottom: 5px;
     font-size: 1.5rem;
+  }
+  .knows h3::after {
+    height: 15px;
+  }
+  .knows li {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  .knows img {
+    width: 35px;
+    height: 35px;
+  }
+  /* -------------------------- PAGE 4 ---------------------------- */
+
+  #projects {
+    padding: 0 0.5rem;
+  }
+  .card {
+    margin: 0.3rem;
+    height: 200px;
+    max-width: 130px;
+    min-width: 130px;
+  }
+  .card-body {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 60%;
+  }
+  .card-body img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .card-text {
+    padding: 3px;
+    height: 40%;
+  }
+  .card-text h4 {
+    margin: 3px;
+    font-size: 0.9rem;
+  }
+  .card-text p {
+    font-size: 0.85rem;
+  }
+  .tecnology img {
+    width: 20px;
+  }
+  .modalContainer {
+    border-radius: 5px;
+    width: 80%;
+    margin: 1rem;
+  }
+  .modalContainer button {
+    border: 2px solid #fff;
+    width: 30px;
+    height: 30px;
+    font-size: 0.8em;
+    margin: 0 3px;
+  }
+  .modalInfo {
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+  }
+  .modalInfo .fechar {
+    font-size: 0.75rem;
+    width: 25px;
+    height: 25px;
+  }
+  .modalInfo h4 {
+    font-size: 1rem;
+  }
+  .modalInfo h4:before {
+    height: 20px;
+  }
+  .modalInfo p {
+    font-size: 1rem;
+  }
+  /* ------------------------ FOOTER ----------------------- */
+  footer {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    flex-direction: column-reverse;
+  }
+
+  footer nav {
+    margin: 20px 0;
+  }
+  footer button {
+    border-radius: 5px;
+  }
+
+  footer img {
+    width: 25px !important;
+    margin-right: 5px;
+  }
+  footer button a {
+    padding: 0.3rem;
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  #page2,
+  #page3,
+  #page4 {
+    padding: 1.5rem 0.5rem;
+  }
+  header {
+    padding-right: 0.4rem;
+    padding-top: 0.4rem;
+  }
+
+  .sociais ul li a img {
+    margin: 0 0.3rem;
+  }
+  .sociais ul li a img {
+    width: 25px;
+  }
+  section {
+    padding: 0 1rem;
+  }
+  section h2 {
+    font-size: 1.3rem !important;
+  }
+  /* ------------------ ASIDE -------------------- */
+  aside {
+    flex: 1;
+  }
+  #port {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  #web {
+    border: 3px solid #20cddf;
+    padding: 3px 4px;
+    margin-right: 0;
+  }
+  #webDev {
+    padding: 0;
+    flex-direction: column;
+  }
+  #web > span {
+    font-size: 3rem;
+  }
+  #nome_dev {
+    flex-direction: column-reverse;
   }
   #nome_dev > #dev {
     font-size: 1.3rem;
@@ -250,321 +443,1017 @@
   #nome_dev > #nome {
     font-size: 1.3rem;
     transform: scale(1, 2.3);
-    margin-bottom: 10px;
+    margin-top: 30px;
   }
   aside > #ano {
-    font-size: 1.3rem;
-  }
-}
-@media only screen and (min-width: 376px) and (max-width: 425px) {
-  /* CAPA */
-  #port {
-    font-size: 17px;
-  }
-  #web {
-    border: 2px solid #20cddf;
-    padding: 1px;
-    margin-right: 5px;
-  }
-  #web > span {
-    font-size: 38px;
-  }
-  #nome_dev > #dev {
-    font-size: 22px;
-  }
-  #nome_dev > #nome {
-    font-size: 17px;
-  }
-  aside > #ano {
-    font-size: 17px;
+    font-size: 1.5rem;
   }
   /* PAGE 2 */
-  #et,
-  #eb,
-  #dt,
-  #db {
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
+  #about {
+    margin-top: 1.5rem;
   }
   #aboutContent {
-    max-width: 350px;
+    margin-bottom: 1.2rem;
   }
   #imgInfo {
-    margin: 8px;
-    margin-top: 15px;
-    padding-bottom: 15px;
-  }
-  #info {
-    font-size: 12px;
-  }
-  .heart {
-    width: 12px;
-  }
-}
-@media only screen and (min-width: 426px) and (max-width: 600px) {
-  #port {
-    font-size: 18px;
-  }
-  #web {
-    border: 2px solid #20cddf;
-    padding: 1px;
-    margin-right: 5px;
-  }
-  #web > span {
-    font-size: 44px;
-  }
-  #nome_dev > #dev {
-    font-size: 26px;
-  }
-  #nome_dev > #nome {
-    font-size: 20px;
-  }
-  aside > #ano {
-    font-size: 18px;
-  }
-  /* PAGE 2 */
-  #et {
-    box-shadow: -4px -4px #fff;
-  }
-  #eb {
-    box-shadow: -4px 4px #fff;
-  }
-  #dt {
-    box-shadow: 4px -4px #fff;
-  }
-  #db {
-    box-shadow: 4px 4px #fff;
+    margin: 0.8rem;
+    margin-top: 10px;
+    padding-bottom: 5px;
   }
   #eu2 {
-    width: 70px;
-    height: 70px;
-  }
-  #et,
-  #eb,
-  #dt,
-  #db {
     width: 60px;
     height: 60px;
   }
   #info {
-    font-size: 13px;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   }
+
+  /* Heart Beat */
   .heart {
-    width: 13px;
+    width: 1.2rem;
   }
-  #aboutContent {
-    max-width: 390px;
+
+  /* -------------------------- PAGE 3 ---------------------------- */
+  #knowledge {
+    margin-top: 0.2rem;
+    padding: 0 1rem;
+    grid-template-columns: 1fr;
+  }
+  .knows {
+    padding: 0 5px;
+    margin: 0.5rem;
+  }
+  .knows h3 {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+  }
+  .knows h3::after {
+    height: 15px;
+  }
+  .knows li {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  .knows img {
+    width: 35px;
+    height: 35px;
+  }
+  /* -------------------------- PAGE 4 ---------------------------- */
+
+  #projects {
+    padding: 0 0.5rem;
+  }
+  .card {
+    margin: 0.3rem;
+    height: 200px;
+    max-width: 140px;
+    min-width: 140px;
+  }
+  .card-body {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 60%;
+  }
+  .card-body img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .card-text {
+    padding: 3px;
+    height: 40%;
+  }
+  .card-text h4 {
+    margin: 3px;
+    font-size: 0.9rem;
+  }
+  .card-text p {
+    font-size: 0.85rem;
+  }
+  .tecnology img {
+    width: 20px;
+  }
+  .modalContainer {
+    border-radius: 5px;
+    width: 80%;
+    margin: 1rem;
+  }
+  .modalContainer button {
+    border: 2px solid #fff;
+    width: 30px;
+    height: 30px;
+    font-size: 0.8em;
+    margin: 0 3px;
+  }
+  .modalInfo {
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+  }
+  .modalInfo .fechar {
+    font-size: 0.75rem;
+    width: 25px;
+    height: 25px;
+  }
+  .modalInfo h4 {
+    font-size: 1rem;
+  }
+  .modalInfo h4:before {
+    height: 20px;
+  }
+  .modalInfo p {
+    font-size: 1rem;
+  }
+  /* ------------------------ FOOTER ----------------------- */
+  footer {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    flex-direction: column-reverse;
+  }
+
+  footer nav {
+    margin: 20px 0;
+  }
+  footer button {
+    border-radius: 5px;
+  }
+
+  footer img {
+    width: 25px !important;
+    margin-right: 5px;
+  }
+  footer button a {
+    padding: 0.3rem;
+    font-size: 1.1rem;
   }
 }
-@media only screen and (min-width: 601px) and (max-width: 768px) {
+@media only screen and (min-width: 426px) and (max-width: 600px) {
+  #page2,
+  #page3,
+  #page4 {
+    padding: 1.8rem 0.8rem;
+  }
+  header {
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .sociais ul li a img {
+    margin: 0 0.4rem;
+  }
+  .sociais ul li a img {
+    width: 30px;
+  }
+  section {
+    padding: 0 1rem;
+  }
+  section h2 {
+    font-size: 1.3rem !important;
+  }
+  /* ------------------ ASIDE -------------------- */
   aside {
-    flex: 3;
+    flex: 2;
   }
   #port {
-    font-size: 18px;
+    font-size: 1.5rem;
+    margin-top: 10px;
   }
   #web {
-    border: 2px solid #20cddf;
-    padding: 1px;
-    margin-right: 8px;
+    border: 4px solid #20cddf;
+    padding: 2px 4px;
+    margin-right: 10px;
+  }
+  #webDev {
+    padding: 3px;
   }
   #web > span {
-    font-size: 44px;
+    font-size: 3.8rem;
   }
   #nome_dev > #dev {
-    font-size: 26px;
+    font-size: 2rem;
   }
   #nome_dev > #nome {
-    font-size: 20px;
+    font-size: 1.8rem;
+    transform: scale(1.1, 2.2);
+    margin-bottom: 20px;
   }
   aside > #ano {
-    font-size: 18px;
+    font-size: 1.5rem;
   }
   /* PAGE 2 */
-  #et {
-    box-shadow: -5px -5px #fff;
+  #about {
+    margin-top: 1.5rem;
   }
-  #eb {
-    box-shadow: -5px 5px #fff;
+  #aboutContent {
+    margin-bottom: 1.2rem;
   }
-  #dt {
-    box-shadow: 5px -5px #fff;
-  }
-  #db {
-    box-shadow: 5px 5px #fff;
+  #imgInfo {
+    margin: 0.8rem;
+    margin-top: 10px;
+    padding-bottom: 5px;
   }
   #eu2 {
-    width: 80px;
-    height: 80px;
-  }
-  #et,
-  #eb,
-  #dt,
-  #db {
     width: 70px;
     height: 70px;
   }
   #info {
-    font-size: 14px;
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   }
+
+  /* Heart Beat */
   .heart {
-    width: 14px;
+    width: 1.3rem;
   }
-  #aboutContent {
-    max-width: 500px;
+
+  /* -------------------------- PAGE 3 ---------------------------- */
+  #knowledge {
+    margin-top: 0.3rem;
+    padding: 0 1.3rem;
+    grid-template-columns: 1fr;
+  }
+  .knows {
+    padding: 0 5px;
+    margin: 0.6rem;
+  }
+  .knows h3 {
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+  }
+  .knows h3::after {
+    height: 20px;
+  }
+  .knows li {
+    margin: 5px 0;
+    font-size: 1.3rem;
+  }
+  .knows img {
+    width: 40px;
+    height: 40px;
+  }
+  /* -------------------------- PAGE 4 ---------------------------- */
+
+  #projects {
+    padding: 0 0.5rem;
+  }
+  .card {
+    margin: 0.4rem;
+    height: 200px;
+    max-width: 150px;
+    min-width: 150px;
+  }
+  .card-body {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 60%;
+  }
+  .card-body img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .card-text {
+    padding: 3px;
+    height: 40%;
+  }
+  .card-text h4 {
+    margin: 3px;
+    font-size: 1rem;
+  }
+  .card-text p {
+    font-size: 0.9rem;
+  }
+  .tecnology img {
+    width: 20px;
+  }
+  .modalContainer {
+    border-radius: 10px;
+    margin: 1rem;
+  }
+  .modalContainer button {
+    border: 2px solid #fff;
+    width: 30px;
+    height: 30px;
+    font-size: 0.8em;
+    margin: 0 3px;
+  }
+  .modalInfo {
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+  }
+  .modalInfo .fechar {
+    font-size: 0.75rem;
+    width: 25px;
+    height: 25px;
+  }
+  .modalInfo h4 {
+    font-size: 1.3rem;
+  }
+  .modalInfo h4:before {
+    height: 20px;
+  }
+  .modalInfo p {
+    font-size: 1.3rem;
+  }
+  /* ------------------------ FOOTER ----------------------- */
+  footer {
+    padding: 1.2rem 2.2rem;
+    font-size: 1.3rem;
+    flex-direction: column-reverse;
+  }
+
+  footer nav {
+    margin: 20px 0;
+  }
+  footer button {
+    border-radius: 8px;
+  }
+
+  footer img {
+    width: 30px !important;
+    margin-right: 8px;
+  }
+  footer button a {
+    padding: 0.5rem;
+    font-size: 1.3rem;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  #page2,
+  #page3,
+  #page4 {
+    padding: 2rem 1rem;
+  }
+  header {
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .sociais ul li a img {
+    margin: 0 0.5rem;
+  }
+  .sociais ul li a img {
+    width: 35px;
+  }
+  section {
+    padding: 0 1rem;
+  }
+  section h2 {
+    font-size: 1.5rem !important;
+  }
+  /* ------------------ ASIDE -------------------- */
   aside {
-    flex: 4;
+    flex: 2.5;
   }
   #port {
-    font-size: 20px;
+    font-size: 1.5rem;
+    margin-top: 30px;
   }
   #web {
-    border: 2px solid #20cddf;
-    padding: 2px;
+    border: 4px solid #20cddf;
+    padding: 2px 4px;
     margin-right: 10px;
   }
+  #webDev {
+    padding: 3px;
+  }
   #web > span {
-    font-size: 54px;
+    font-size: 4.2rem;
   }
   #nome_dev > #dev {
-    font-size: 32px;
+    font-size: 2.5rem;
   }
   #nome_dev > #nome {
-    font-size: 24px;
+    font-size: 2rem;
+    transform: scale(1.25, 2.2);
+    margin-bottom: 20px;
   }
   aside > #ano {
-    font-size: 20px;
+    font-size: 1.5rem;
   }
   /* PAGE 2 */
-  #et {
-    box-shadow: -6px -6px #fff;
+  #about {
+    margin-top: 1.5rem;
   }
-  #eb {
-    box-shadow: -6px 6px #fff;
+  #aboutContent {
+    margin-bottom: 1.2rem;
   }
-  #dt {
-    box-shadow: 6px -6px #fff;
-  }
-  #db {
-    box-shadow: 6px 6px #fff;
+  #imgInfo {
+    margin: 0.9rem;
+    margin-top: 10px;
+    padding-bottom: 5px;
   }
   #eu2 {
-    width: 100px;
-    height: 100px;
-  }
-  #about > h2 {
-    font-size: 20px;
-  }
-  #et,
-  #eb,
-  #dt,
-  #db {
     width: 90px;
     height: 90px;
   }
   #info {
-    font-size: 16px;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   }
+
+  /* Heart Beat */
   .heart {
-    width: 16px;
+    width: 1.4rem;
   }
-  #aboutContent {
-    max-width: 700px;
+
+  /* -------------------------- PAGE 3 ---------------------------- */
+  #knowledge {
+    margin-top: 0.4rem;
+    padding: 0 1.4rem;
+    grid-template-columns: 1fr;
   }
-  /* PAGE 3 */
+  .knows {
+    padding: 0 5px;
+    margin: 0.7rem;
+  }
+  .knows h3 {
+    margin-bottom: 5px;
+    font-size: 2rem;
+  }
+  .knows h3::after {
+    height: 25px;
+  }
+  .knows li {
+    margin: 5px 0;
+    font-size: 1.4rem;
+  }
+  .knows img {
+    width: 45px;
+    height: 45px;
+  }
+  /* -------------------------- PAGE 4 ---------------------------- */
+
+  #projects {
+    padding: 0 0.5rem;
+  }
+  .card {
+    margin: 0.4rem;
+    height: 230px;
+    max-width: 170px;
+    min-width: 170px;
+  }
+  .card-body {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 60%;
+  }
+  .card-body img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .card-text {
+    padding: 3px;
+    height: 40%;
+  }
+  .card-text h4 {
+    margin: 3px;
+    font-size: 1.2rem;
+  }
+  .card-text p {
+    font-size: 1rem;
+  }
+  .tecnology img {
+    width: 23px;
+  }
+  .modalContainer {
+    border-radius: 10px;
+    margin: 1rem;
+  }
+  .modalContainer button {
+    border: 2px solid #fff;
+    width: 30px;
+    height: 30px;
+    font-size: 0.8em;
+    margin: 0 3px;
+  }
+  .modalInfo {
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+  }
+  .modalInfo .fechar {
+    font-size: 0.75rem;
+    width: 25px;
+    height: 25px;
+  }
+  .modalInfo h4 {
+    font-size: 1.3rem;
+  }
+  .modalInfo h4:before {
+    height: 20px;
+  }
+  .modalInfo p {
+    font-size: 1.3rem;
+  }
+  /* ------------------------ FOOTER ----------------------- */
+  footer {
+    padding: 1.2rem 2.2rem;
+    font-size: 1.3rem;
+    flex-direction: column-reverse;
+  }
+
+  footer nav {
+    margin: 20px 0;
+  }
+  footer button {
+    border-radius: 8px;
+  }
+
+  footer img {
+    width: 30px !important;
+    margin-right: 8px;
+  }
+  footer button a {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+  }
 }
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #page2,
+  #page3,
+  #page4 {
+    padding: 2.2rem 1.2rem;
+  }
+  header {
+    padding-right: 0.6rem;
+    padding-top: 0.6rem;
+  }
+
+  .sociais ul li a img {
+    margin: 0 0.6rem;
+  }
+  .sociais ul li a img {
+    width: 40px;
+  }
+  section {
+    padding: 0 1.2rem;
+  }
+  section h2 {
+    font-size: 1.8rem !important;
+  }
+  /* ------------------ ASIDE -------------------- */
   aside {
-    flex: 4;
+    flex: 3;
   }
   #port {
-    font-size: 26px;
+    font-size: 1.7rem;
+    margin-top: 40px;
   }
   #web {
-    border: 3px solid #20cddf;
-    padding: 3px;
+    border: 4px solid #20cddf;
+    padding: 3px 5px;
     margin-right: 10px;
+    margin-top: 40px;
+  }
+  #webDev {
+    padding: 4px;
   }
   #web > span {
-    font-size: 70px;
+    font-size: 5rem;
   }
   #nome_dev > #dev {
-    font-size: 40px;
+    font-size: 2.8rem;
   }
   #nome_dev > #nome {
-    font-size: 32px;
+    font-size: 2.2rem;
+    transform: scale(1.2, 2.1);
+    margin-bottom: 20px;
   }
   aside > #ano {
-    font-size: 26px;
+    font-size: 1.7rem;
   }
   /* PAGE 2 */
+  #et,
+  #eb,
+  #dt,
+  #db {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+  }
   #et {
-    box-shadow: -7px -7px #fff;
+    box-shadow: -10px -10px #fff;
   }
   #eb {
-    box-shadow: -7px 7px #fff;
+    box-shadow: -10px 10px #fff;
   }
   #dt {
-    box-shadow: 7px -7px #fff;
+    box-shadow: 10px -10px #fff;
   }
   #db {
-    box-shadow: 7px 7px #fff;
+    box-shadow: 10px 10px #fff;
+  }
+  #about {
+    margin-top: 1.5rem;
+  }
+  #aboutContent {
+    margin-bottom: 1.2rem;
+  }
+  #imgInfo {
+    margin: 1rem;
+    margin-top: 10px;
+    padding-bottom: 5px;
   }
   #eu2 {
-    width: 120px;
-    height: 120px;
-    margin-right: 20px;
-    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
   }
-  #about > h2 {
-    font-size: 24px;
+  #info {
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   }
+
+  /* Heart Beat */
+  .heart {
+    width: 1.6rem;
+  }
+
+  /* -------------------------- PAGE 3 ---------------------------- */
+  #knowledge {
+    margin-top: 0.5rem;
+    padding: 0 1.4rem;
+  }
+  .knows {
+    padding: 0 5px;
+    margin: 0.6rem;
+  }
+  .knows h3 {
+    margin-bottom: 5px;
+    font-size: 2rem;
+  }
+  .knows h3::after {
+    height: 25px;
+  }
+  .knows li {
+    margin: 5px 0;
+    font-size: 1.1rem;
+  }
+  .knows img {
+    width: 40px;
+    height: 40px;
+  }
+  /* -------------------------- PAGE 4 ---------------------------- */
+
+  #projects {
+    padding: 0 0.5rem;
+  }
+  .card {
+    margin: 0.5rem;
+    height: 250px;
+    max-width: 180px;
+    min-width: 180px;
+  }
+  .card-body {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 60%;
+  }
+  .card-body img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .card-text {
+    padding: 4px;
+    height: 40%;
+  }
+  .card-text h4 {
+    margin: 4px;
+    font-size: 1.3rem;
+  }
+  .card-text p {
+    font-size: 1.1rem;
+  }
+  .tecnology img {
+    width: 25px;
+  }
+  .modalContainer {
+    border-radius: 10px;
+    margin: 1rem;
+  }
+  .modalContainer button {
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 1em;
+    margin: 0 5px;
+  }
+  .modalInfo {
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .modalInfo .fechar {
+    font-size: 0.8rem;
+    width: 30px;
+    height: 30px;
+  }
+  .modalInfo h4 {
+    font-size: 1.7rem;
+  }
+  .modalInfo h4:before {
+    height: 25px;
+  }
+  .modalInfo p {
+    font-size: 1.7rem;
+  }
+  /* ------------------------ FOOTER ----------------------- */
+  footer {
+    padding: 1.3rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  footer nav {
+    margin: 20px 0;
+  }
+  footer button {
+    border-radius: 8px;
+    font-size: 1.3rem;
+  }
+
+  footer img {
+    width: 30px !important;
+    margin-right: 5px;
+  }
+  footer button a {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  #page2,
+  #page3,
+  #page4 {
+    padding: 2.5rem 1.5rem;
+  }
+  header {
+    padding-right: 0.8rem;
+    padding-top: 0.8rem;
+  }
+
+  .sociais ul li a img {
+    margin: 0 0.8rem;
+  }
+  .sociais ul li a img {
+    width: 40px;
+  }
+  section {
+    padding: 0 1.5rem;
+  }
+  section h2 {
+    font-size: 2rem !important;
+  }
+  /* ------------------ ASIDE -------------------- */
+  aside {
+    flex: 3.5;
+  }
+  #port {
+    font-size: 2rem;
+    margin-top: 50px;
+  }
+  #web {
+    border: 5px solid #20cddf;
+    padding: 4px 6px;
+    margin-right: 10px;
+  }
+  #webDev {
+    padding: 5px;
+    margin-top: 50px;
+  }
+  #web > span {
+    font-size: 6rem;
+  }
+  #nome_dev > #dev {
+    font-size: 3.2rem;
+  }
+  #nome_dev > #nome {
+    font-size: 2.7rem;
+    transform: scale(1.2, 2);
+    margin-bottom: 20px;
+  }
+  aside > #ano {
+    font-size: 2rem;
+  }
+  /* PAGE 2 */
   #et,
   #eb,
   #dt,
   #db {
     width: 100px;
     height: 100px;
+    border-radius: 10px;
   }
-  #info {
-    font-size: 18px;
+  #et {
+    box-shadow: -10px -10px #fff;
   }
-  .heart {
-    width: 18px;
+  #eb {
+    box-shadow: -10px 10px #fff;
+  }
+  #dt {
+    box-shadow: 10px -10px #fff;
+  }
+  #db {
+    box-shadow: 10px 10px #fff;
+  }
+  #about {
+    margin-top: 1.5rem;
   }
   #aboutContent {
-    max-width: 900px;
+    margin-bottom: 1.2rem;
+  }
+  #imgInfo {
+    margin: 1.2rem;
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+  #eu2 {
+    width: 120px;
+    height: 120px;
+  }
+  #info {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Heart Beat */
+  .heart {
+    width: 1.7rem;
+  }
+
+  /* -------------------------- PAGE 3 ---------------------------- */
+  #knowledge {
+    margin-top: 0.8rem;
+    padding: 0 1.5rem;
+  }
+  .knows {
+    padding: 0 5px;
+    margin: 0.7rem;
+  }
+  .knows h3 {
+    margin-bottom: 5px;
+    font-size: 2.3rem;
+  }
+  .knows h3::after {
+    height: 30px;
+  }
+  .knows li {
+    margin: 10px 0;
+    font-size: 1.4rem;
+  }
+  .knows img {
+    width: 50px;
+    height: 50px;
+  }
+  /* -------------------------- PAGE 4 ---------------------------- */
+
+  #projects {
+    padding: 0 0.7rem;
+  }
+  .card {
+    margin: 0.6rem;
+    height: 280px;
+    max-width: 200px;
+    min-width: 200px;
+  }
+  .card-body {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 65%;
+  }
+  .card-body img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .card-text {
+    padding: 4px;
+    height: 35%;
+  }
+  .card-text h4 {
+    margin: 4px;
+    font-size: 1.4rem;
+  }
+  .card-text p {
+    font-size: 1.2rem;
+  }
+  .tecnology img {
+    width: 28px;
+  }
+  .modalContainer {
+    border-radius: 10px;
+    margin: 1rem;
+  }
+  .modalContainer button {
+    border: 2px solid #fff;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    margin: 0 5px;
+  }
+  .modalInfo {
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+  }
+  .modalInfo .fechar {
+    font-size: 1rem;
+    width: 40px;
+    height: 40px;
+  }
+  .modalInfo h4 {
+    font-size: 1.9rem;
+  }
+  .modalInfo h4:before {
+    height: 30px;
+  }
+  .modalInfo p {
+    font-size: 1.9rem;
+  }
+  /* ------------------------ FOOTER ----------------------- */
+  footer {
+    padding: 1.4rem 2.1rem;
+    font-size: 1.3rem;
+  }
+
+  footer nav {
+    margin: 20px 0;
+  }
+  footer button {
+    border-radius: 8px;
+    font-size: 1.4rem;
+  }
+
+  footer img {
+    width: 35px !important;
+    margin-right: 5px;
+  }
+  footer button a {
+    padding: 0.5rem;
+    font-size: 1.4rem;
   }
 }
 @media only screen and (min-width: 1441px) {
+  #page2,
+  #page3,
+  #page4 {
+    padding: 3rem 2rem;
+  }
+  header {
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+
+  .sociais ul li a img {
+    margin: 0 1rem;
+  }
+  .sociais ul li a img {
+    width: 60px;
+  }
+  section {
+    padding: 0 3rem;
+  }
+  section h2 {
+    font-size: 3.5rem !important;
+  }
+  /* ------------------ ASIDE -------------------- */
   aside {
-    flex: 4;
+    flex: 3.5;
   }
   #port {
-    font-size: 50px;
+    font-size: 4rem;
+    margin-top: 80px;
   }
   #web {
-    border: 5px solid #20cddf;
+    border: 10px solid #20cddf;
+    padding: 5px 7px;
+    margin-right: 10px;
+  }
+  #webDev {
     padding: 5px;
-    margin-right: 15px;
+    margin-top: 80px;
   }
   #web > span {
-    font-size: 130px;
+    font-size: 10rem;
   }
   #nome_dev > #dev {
-    font-size: 80px;
+    font-size: 5rem;
   }
   #nome_dev > #nome {
-    font-size: 62px;
+    font-size: 4.3rem;
+    transform: scale(1.1, 2);
+    margin-bottom: 20px;
   }
   aside > #ano {
-    font-size: 50px;
+    font-size: 4rem;
   }
   /* PAGE 2 */
+  #et,
+  #eb,
+  #dt,
+  #db {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+  }
   #et {
     box-shadow: -15px -15px #fff;
   }
@@ -577,32 +1466,142 @@
   #db {
     box-shadow: 15px 15px #fff;
   }
-  #eu2 {
-    width: 250px;
-    height: 250px;
-    margin-right: 40px;
-    margin-bottom: 30px;
-  }
-  #about > h4 {
-    font-size: 50px;
-  }
-  #et,
-  #eb,
-  #dt,
-  #db {
-    width: 200px;
-    height: 200px;
-  }
-  #imgInfo {
-    padding: 40px;
-  }
-  #info {
-    font-size: 36px;
-  }
-  .heart {
-    width: 36px;
+  #about {
+    margin-top: 2rem;
   }
   #aboutContent {
-    max-width: 1300px;
+    margin-bottom: 1.2rem;
+  }
+  #imgInfo {
+    margin: 1.2rem;
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+  #eu2 {
+    width: 200px;
+    height: 200px;
+    margin-top: 2rem;
+    margin-right: 10px;
+  }
+  #info {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    margin-top: 2rem;
+  }
+
+  /* Heart Beat */
+  .heart {
+    width: 3rem;
+  }
+
+  /* -------------------------- PAGE 3 ---------------------------- */
+  #knowledge {
+    margin-top: 2rem;
+    padding: 0 2.5rem;
+  }
+  .knows {
+    padding: 0 20px;
+    margin: 1.5rem;
+  }
+  .knows h3 {
+    margin-bottom: 20px;
+    font-size: 4rem;
+  }
+  .knows h3::after {
+    height: 50px;
+  }
+  .knows li {
+    margin: 10px 0;
+    font-size: 3rem;
+  }
+  .knows img {
+    width: 100px;
+    height: 100px;
+  }
+  /* -------------------------- PAGE 4 ---------------------------- */
+
+  #projects {
+    padding: 0 1rem;
+  }
+  .card {
+    margin: 1rem;
+    height: 600px;
+    max-width: 400px;
+    min-width: 400px;
+  }
+  .card-body {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 70%;
+  }
+  .card-body img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .card-text {
+    padding: 5px;
+    height: 30%;
+  }
+  .card-text h4 {
+    margin: 5px;
+    font-size: 2.5rem;
+  }
+  .card-text p {
+    font-size: 2rem;
+  }
+  .tecnology img {
+    width: 50px;
+  }
+  .modalContainer {
+    border-radius: 10px;
+    margin: 1.5rem;
+  }
+  .modalContainer button {
+    border: 3px solid #fff;
+    width: 80px;
+    height: 80px;
+    font-size: 2em;
+    margin: 0 10px;
+  }
+  .modalInfo {
+    border-radius: 10px;
+    padding: 2rem;
+    font-size: 4rem;
+  }
+  .modalInfo .fecharInfo {
+    font-size: 2.5rem;
+    width: 70px;
+    height: 70px;
+  }
+  .modalInfo h4 {
+    font-size: 3rem;
+  }
+  .modalInfo h4:before {
+    height: 50px;
+  }
+  .modalInfo p {
+    font-size: 3rem;
+  }
+  /* ------------------------ FOOTER ----------------------- */
+  footer {
+    padding: 2rem 3rem;
+    font-size: 2rem;
+  }
+
+  footer nav {
+    margin: 40px 0;
+  }
+  footer button {
+    border-radius: 10px;
+    font-size: 2rem;
+  }
+
+  footer img {
+    width: 50px !important;
+    margin-right: 10px;
+  }
+  footer button a {
+    padding: 1rem;
+    font-size: 2rem;
   }
 }
