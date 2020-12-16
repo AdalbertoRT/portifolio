@@ -462,6 +462,7 @@ aside > #ano {
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
+  align-items: center;
   opacity: 0;
   transition: 0.2s;
 }
@@ -501,8 +502,8 @@ aside > #ano {
 .modalContainer.ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
-  width: 80%;
-  height: auto;
+  width: 70%;
+  height: 90vh;
 }
 .btnContainer {
   position: absolute;
@@ -523,12 +524,11 @@ aside > #ano {
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 100%;
 }
 .modalInfo {
   position: absolute;
   width: 80%;
-  z-index: 111;
+
   background-color: #fff;
   border: 5px solid #20cddf;
   border-radius: 10px;
@@ -544,6 +544,7 @@ aside > #ano {
 .modalInfo.ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+  z-index: 111;
 }
 .modalInfo .fecharInfo {
   position: absolute;
@@ -650,4 +651,25 @@ footer button a {
   to {
     transform: rotate(360deg);
   }
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #20cddf;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #208ff8;
 }

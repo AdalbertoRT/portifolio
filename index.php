@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portifólio - Adalberto Teixeira">
+    <meta name="keywords" content="Adalberto, Portifólio, Projetos, Projects, Habilidades, Skills, Knowledges, Conhecimentos, Sobre, About, Tecnologia, Tecnology, Análise e Desenvolvimento de Sistemas, Full-Stack, Desenvolvedor Web, Web Developer, Front-End, Back-End">
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mqueries.css">
-    <!--    <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+
+
     <title>Adalberto - Portifólio</title>
 </head>
 
@@ -19,7 +22,7 @@
                 <li class="facebook"><a href="https://www.facebook.com/adalbertoart" target="_blank"><img src="images/icons/facebook.png" alt="Facebook"></a></li>
                 <li class="instagram"><a href="https://www.instagram.com/adalbertoart/" target="_blank"><img src="images/icons/instagram.png" alt="Instagram"></a></li>
                 <li class="linkedin"><a href="linkedin.com/in/adalberto-teixeira" target="_blank"><img src="images/icons/linkedin.png" alt="Linkedin"></a></li>
-                <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=5517997033384&text=Olá!%20Meu%20nome%20é%20Adalberto.%20Sou%20Desenvolvedor%20Web.%20Em%20que%20posso%20ajudá-lo?" target="_blank"><img src="images/icons/whatsapp.png" alt="Whatsapp"></a></li>
+                <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=5517997033384&text=Olá,%20tudo%20bem!%20Gostaria%20de%20informações%20sobre%20seus%20serviços.%20Está%20Disponível?" target="_blank"><img src="images/icons/whatsapp.png" alt="Whatsapp"></a></li>
                 <li class="github"><a href="https://github.com/AdalbertoRT" target="_blank"><img src="images/icons/github_icon.png" alt="Github"></a></li>
                 <li class="mail"><a href="mailto:adalbertoart@gmail.com?subject=Olá!%20Tudo%20bem?" target="_blank"><img src="images/icons/mail.png" alt="E-mail"></a></li>
             </ul>
@@ -112,7 +115,7 @@
                 <li class="facebook"><a href="https://www.facebook.com/adalbertoart" target="_blank"><img src="images/icons/facebook.png" alt="Facebook"></a></li>
                 <li class="instagram"><a href="https://www.instagram.com/adalbertoart/" target="_blank"><img src="images/icons/instagram.png" alt="Instagram"></a></li>
                 <li class="linkedin"><a href="linkedin.com/in/adalberto-teixeira" target="_blank"><img src="images/icons/linkedin.png" alt="Linkedin"></a></li>
-                <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=5517997033384&text=Olá!%20Meu%20nome%20é%20Adalberto.%20Sou%20Desenvolvedor%20Web.%20Em%20que%20posso%20ajudá-lo?" target="_blank"><img src="images/icons/whatsapp.png" alt="Whatsapp"></a></li>
+                <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=5517997033384&text=Olá,%20tudo%20bem!%20Gostaria%20de%20informações%20sobre%20seus%20serviços.%20Está%20Disponível?" target="_blank"><img src="images/icons/whatsapp.png" alt="Whatsapp"></a></li>
                 <li class="github"><a href="https://github.com/AdalbertoRT" target="_blank"><img src="images/icons/github_icon.png" alt="Github"></a></li>
                 <li class="mail"><a href="mailto:adalbertoart@gmail.com?subject=Olá!%20Tudo%20bem?" target="_blank"><img src="images/icons/mail.png" alt="E-mail"></a></li>
             </ul>
@@ -136,7 +139,6 @@
     </div>
     <div hidden id="loader"></div>
 
-    <!-- <script type="text/javascript" src="js/knowledges.js"></script> -->
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 
