@@ -652,7 +652,6 @@ footer button a {
     transform: rotate(360deg);
   }
 }
-<<<<<<< HEAD
 
 ::-webkit-scrollbar {
   width: 20px;
@@ -674,5 +673,3 @@ footer button a {
 ::-webkit-scrollbar-thumb:hover {
   background: #208ff8;
 }
-=======
->>>>>>> 4109a0f7ccce9ec79630b6c9d6cbc4e89cede9fd
