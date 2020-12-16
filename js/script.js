@@ -188,6 +188,7 @@ function limpaModal() {
 function fechaModal() {
   let modal = c(".modal");
   let modalContainer = c(".modalContainer");
+  let modalInfo = c(".modalInfo");
   modal.addEventListener("click", ({ target }) => {
     if (
       target.classList.contains("modal") ||
@@ -195,9 +196,13 @@ function fechaModal() {
     ) {
       modal.classList.remove("ativo");
       modalContainer.classList.remove("ativo");
+      if (modalInfo.classList.contains("ativo")) {
+        modalInfo.classList.remove("ativo");
+        c(".modalContent").style.opacity = "1";
+      }
       c("body").style.overflowY = "auto";
     } else if (target.classList.contains("fecharInfo")) {
-      c(".modalInfo").classList.remove("ativo");
+      modalInfo.classList.remove("ativo");
       c(".modalContent").style.opacity = "1";
     }
   });
