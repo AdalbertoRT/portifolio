@@ -126,9 +126,7 @@
                 <button class="fechar">x</button>
                 <button class="info">Info</button>
             </div>
-            <div class="modalContent">
-                <img src="" alt="">
-            </div>
+            <div class="modalContent"></div>
             <div class="modalInfo">
                 <button class="fecharInfo">x</button>
                 <h4></h4>
@@ -136,6 +134,7 @@
             </div>
         </div>
     </div>
+    <div hidden id="loader"></div>
 
     <!-- <script type="text/javascript" src="js/knowledges.js"></script> -->
     <script type="text/javascript" src="js/script.js"></script>
