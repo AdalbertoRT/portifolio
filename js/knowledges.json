@@ -25,7 +25,7 @@
     {
       "id": 4,
       "titulo": "Ferramentas",
-      "ferramentas": ["Git", "GitHub", "Composer", "NPM"]
+      "ferramentas": ["Git", "GitHub"]
     }
   ]
 }
