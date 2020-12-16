@@ -81,7 +81,7 @@ header {
 }
 div.capa {
   background-image: url("../images/eu-50-brilho.png"),
-    url("../images/xadrez_turquesa2.png"), url("../images/xadrez_azul.png");
+    url("../images/xadrez_turquesa.png"), url("../images/xadrez_azul.png");
   background-size: cover;
   background-repeat: round, repeat-x, repeat-x;
   background-position: right;
@@ -93,7 +93,8 @@ div.capa {
 #page4 {
   padding: 2rem 1rem;
 }
-section {
+section,
+footer {
   padding: 0 2rem;
   width: 100vw;
   box-sizing: border-box;
@@ -431,17 +432,22 @@ aside > #ano {
   margin: 3px;
   text-align: center;
 }
+.tecnologies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .tecnology {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.tecnology img {
+.tecnology {
   width: 25px;
   margin: 0 2px;
 }
-.tecnology img:hover {
+.tecnology:hover {
   transform: scale(1.1);
 }
 .modal {
@@ -596,4 +602,52 @@ footer button a {
   font-size: 1.5rem;
   transition: 0.3s ease-in-out;
 }
-/* ------------------------ MEDIA QUERYS ----------------------- */
+/* ------------------------ LOADING ----------------------- */
+.loadContainer {
+  background-color: rgba(200, 200, 200, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 111;
+}
+.loadIcon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/icons/loading.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#loader:not([hidden]) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loader::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f3f3f3;
+  border-top: 3px solid #20cddf;
+  border-radius: 100%;
+  will-change: transform;
+  animation: load 1s infinite linear;
+}
+
+@keyframes load {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
