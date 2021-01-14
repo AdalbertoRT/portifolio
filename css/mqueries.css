@@ -970,6 +970,10 @@
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  div.capa {
+    background-image: url("../images/eu-50-brilho.png"),
+      url("../images/xadrez_turquesa2.png"), url("../images/xadrez_azul2.png");
+  }
   #page2,
   #page3,
   #page4 {
@@ -1182,6 +1186,10 @@
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  div.capa {
+    background-image: url("../images/eu-50-brilho.png"),
+      url("../images/xadrez_turquesa2.png"), url("../images/xadrez_azul2.png");
+  }
   #page2,
   #page3,
   #page4 {
@@ -1393,6 +1401,10 @@
   }
 }
 @media only screen and (min-width: 1441px) {
+  div.capa {
+    background-image: url("../images/eu-50-brilho.png"),
+      url("../images/xadrez_turquesa2.png"), url("../images/xadrez_azul2.png");
+  }
   #page2,
   #page3,
   #page4 {

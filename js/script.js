@@ -54,10 +54,28 @@ function initAnimaScroll() {
     }
   }
   animaScroll();
-
   window.addEventListener("scroll", animaScroll);
 }
 initAnimaScroll();
+
+function initAnimaCards() {
+  function animaCards() {
+    const card = cs(".card");
+    if (card.length) {
+      const windowMetade = window.innerHeight * 0.8;
+      card.forEach((el) => {
+        const cardTop = el.getBoundingClientRect().top;
+        const cardVisible = cardTop - windowMetade < 0;
+        if (cardVisible) {
+          el.classList.add("animaToTop");
+        }
+      });
+    }
+  }
+  animaCards();
+  window.addEventListener("scroll", animaCards);
+}
+initAnimaCards();
 
 function scrollSuave() {
   const about = c('#nome a[href^="#"]');

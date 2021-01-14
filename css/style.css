@@ -80,11 +80,13 @@ header {
   height: 100%;
 }
 div.capa {
-  background-image: url("../images/eu-50-brilho.png"),
-    url("../images/xadrez_turquesa.png"), url("../images/xadrez_azul.png");
-  background-size: cover;
+  height: 100%;
+  background-image: url("../images/eu-50-brilho2.png"),
+    url("../images/xadrez_turquesa2.png"), url("../images/xadrez_azul2.png");
+  background-size: cover, cover, cover;
   background-repeat: round, repeat-x, repeat-x;
-  background-position: right;
+  background-position: left, right, right;
+
   animation: xadrezAnimado 20s linear infinite;
   flex: 1;
 }
@@ -387,10 +389,16 @@ aside > #ano {
   background: #000;
   color: #fff;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translate3d(0, 30px, 0);
 }
 .card:hover {
   transform: scale(1.03);
+}
+.card.animaToTop {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
 .card-body {
   position: relative;
@@ -502,8 +510,9 @@ aside > #ano {
 .modalContainer.ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
-  width: 70%;
-  height: 90vh;
+  width: 80vw;
+  height: 80vh;
+  max-height: 90vh;
 }
 .btnContainer {
   position: absolute;
@@ -524,6 +533,7 @@ aside > #ano {
   position: relative;
   width: 100%;
   height: auto;
+  min-height: 100vh;
 }
 .modalInfo {
   position: absolute;

@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portifólio - Adalberto Teixeira">
     <meta name="keywords" content="Adalberto, Portifólio, Projetos, Projects, Habilidades, Skills, Knowledges, Conhecimentos, Sobre, About, Tecnologia, Tecnology, Análise e Desenvolvimento de Sistemas, Full-Stack, Desenvolvedor Web, Web Developer, Front-End, Back-End">
+    <!-- PRELOADS -->
+    <link rel="preload" href="fonts/helvetica.otf" as="font" type="font/otf" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RedRock.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Streaster.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/mqueries.css" as="style">
+    <link rel="preload" href="js/script.js" as="script">
+
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mqueries.css">
