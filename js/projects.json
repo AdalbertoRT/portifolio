@@ -107,6 +107,18 @@
         "Projeto de Estudo",
         "Criação de um site institucional para uma clínica médica para desenvolver habilidades em HTML5, CSS3 e Javascript."
       ]
+    },
+    {
+      "id": 10,
+      "name": "covid-19 BR",
+      "type": "portal",
+      "tecnology": ["reactjs", "styled-components", "restapi"],
+      "thumb": "covid19br.png",
+      "image": "index_covid19br.png",
+      "info": [
+        "Projeto de Estudo",
+        "Criação de um portal de notícias sobre o coronavírus (covid-19), alimentado com dados vindos de uma API externa. Construído com ReactJS, Styled-Components e CSS Modules."
+      ]
     }
   ]
 }

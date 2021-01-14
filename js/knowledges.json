@@ -9,7 +9,8 @@
         "Javascript",
         "ReactJS",
         "VueJS",
-        "Bootstrap"
+        "Bootstrap",
+        "Styled-Components"
       ]
     },
     {
@@ -20,7 +21,7 @@
     {
       "id": 3,
       "titulo": "Design Gráfico",
-      "ferramentas": ["Photoshop", "Illustrator", "After Effects", "Premiere"]
+      "ferramentas": ["Photoshop", "Illustrator", "After Effects", "Premiere", "Adobe XD"]
     },
     {
       "id": 4,
