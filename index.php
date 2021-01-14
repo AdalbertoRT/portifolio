@@ -9,7 +9,7 @@
     <!-- PRELOADS -->
     <link rel="preload" href="fonts/helvetica.otf" as="font" type="font/otf" crossorigin="anonymous">
     <link rel="preload" href="fonts/RedRock.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Streaster.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Streamster.ttf" as="font" type="font/ttf" crossorigin="anonymous">
     <link rel="preload" href="css/style.css" as="style">
     <link rel="preload" href="css/mqueries.css" as="style">
     <link rel="preload" href="js/script.js" as="script">
