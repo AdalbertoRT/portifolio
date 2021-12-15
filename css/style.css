@@ -189,7 +189,7 @@ aside a {
 .scalable:hover {
   transform: scale(1.03);
 }
-aside > #ano {
+aside > .ano {
   position: absolute;
   top: 90%;
   font-size: 2rem;

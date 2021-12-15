@@ -246,3 +246,11 @@ function mostrarInfo() {
     });
   }
 }
+
+function mostrarAno() {
+  let span = document.querySelectorAll(".ano");
+  let ano = new Date().getFullYear();
+  span.forEach((el) => (el.innerText = ano));
+  // console.log(span);
+}
+mostrarAno();
