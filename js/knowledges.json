@@ -8,6 +8,7 @@
         "CSS 3",
         "Javascript",
         "ReactJS",
+        "React Native",
         "VueJS",
         "Bootstrap",
         "Styled-Components"
@@ -21,7 +22,13 @@
     {
       "id": 3,
       "titulo": "Design Gráfico",
-      "ferramentas": ["Photoshop", "Illustrator", "After Effects", "Premiere", "Adobe XD"]
+      "ferramentas": [
+        "Photoshop",
+        "Illustrator",
+        "After Effects",
+        "Premiere",
+        "Adobe XD"
+      ]
     },
     {
       "id": 4,
